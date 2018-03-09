@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.nemanja.loopey.MainActivity">
+
+    <TextView
+        android:id="@+id/foreach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/startTimeForEach"
+        android:text="FOREACH"/>
+    <TextView
+        android:id="@+id/startTimeForEach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/stopTimeTimeForEach"
+        android:text="start time: "/>
+    <TextView
+        android:id="@+id/stopTimeTimeForEach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop time"
+        app:layout_constraintBottom_toTopOf="@+id/totalTimeTimeForEach"/>
+    <TextView
+        android:id="@+id/totalTimeTimeForEach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="total time"
+        app:layout_constraintBottom_toTopOf="@+id/centerText"/>
+
+    <TextView
+        android:id="@+id/centerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loop Beast!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/forIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/centerText"
+        android:text="FORINDEX"/>
+    <TextView
+        android:id="@+id/startTimeForIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/forIndex"
+        android:text="start time: "/>
+    <TextView
+        android:id="@+id/stopTimeTimeForIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop time"
+        app:layout_constraintTop_toBottomOf="@+id/startTimeForIndex"/>
+    <TextView
+        android:id="@+id/totalTimeTimeForIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="total time"
+        app:layout_constraintTop_toBottomOf="@+id/stopTimeTimeForIndex"/>
+
+    <TextView
+        android:id="@+id/testStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test status: "/>
+
+    <Button
+        android:id="@+id/createList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Create List"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Start"
+        app:layout_constraintStart_toEndOf="@+id/createList"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/listSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List size: "
+        app:layout_constraintTop_toBottomOf="@+id/testStatus"/>
+
+</android.support.constraint.ConstraintLayout>
